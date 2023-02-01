@@ -1,6 +1,10 @@
-class Bookstoreservice {
-  getBooks() {
-    return [
+import BookList from "../book-list/BookList";
+
+const HomePage = () => {
+  return (
+    <>
+      <div>Home Page</div>
+      <BookList books = {[
       {
         id: 1,
         title: "Production-Ready Microservices",
@@ -11,8 +15,9 @@ class Bookstoreservice {
         titile: "Realease It!",
         author: "Michael T. Nygard",
       },
-    ];
-  }
-}
+    ]}/>
+    </>
+  );
+};
 
-export default Bookstoreservice;
+export default HomePage;
