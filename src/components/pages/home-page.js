@@ -1,22 +1,12 @@
-import BookList from "../book-list/BookList";
+import BookList from "../book-list";
+import { ShoppingCartTable } from "../shopping-cart-table";
 
 const HomePage = () => {
   return (
-    <>
-      <div>Home Page</div>
-      <BookList books = {[
-      {
-        id: 1,
-        title: "Production-Ready Microservices",
-        author: "Susan J. Fowler",
-      },
-      {
-        id: 2,
-        titile: "Realease It!",
-        author: "Michael T. Nygard",
-      },
-    ]}/>
-    </>
+    <div>
+      <BookList/>
+      <ShoppingCartTable/>
+    </div>
   );
 };
 
