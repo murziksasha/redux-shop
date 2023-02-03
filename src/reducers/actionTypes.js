@@ -1,3 +1,5 @@
 
 export const BOOKS_LOADED = 'BOOKS_LOADED';
 export const BOOKS_REQUESTED = 'BOOKS_REQUESTED';
+export const BOOKS_ERROR = 'BOOKS_ERROR';
+export const BOOK_ADDED_TO_CART = 'BOOK_ADDED_TO_CART';
