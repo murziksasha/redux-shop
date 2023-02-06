@@ -1,4 +1,4 @@
-import { BOOKS_LOADED, BOOKS_REQUESTED, BOOKS_ERROR, BOOK_ADDED_TO_CART } from "../reducers/actionTypes";
+import { BOOKS_LOADED, BOOKS_REQUESTED, BOOKS_ERROR, BOOK_ADDED_TO_CART, BOOK_REMOVED_FROM_CART, ALL_BOOK_REMOVED_FROM_CART } from "../reducers/actionTypes";
 
 export const booksLoaded = (newBooks) => {
   return {
@@ -23,6 +23,20 @@ export const booksError = (error)=> {
 export const bookAddedToCart = (bookId) => {
   return {
     type: BOOK_ADDED_TO_CART,
+    payload: bookId
+  }
+}
+
+export const bookRemoveFromCart = (bookId) => {
+  return {
+    type: BOOK_REMOVED_FROM_CART,
+    payload: bookId
+  }
+}
+
+export const allBookRemoveFromCart = (bookId) => {
+  return {
+    type: ALL_BOOK_REMOVED_FROM_CART,
     payload: bookId
   }
 }
